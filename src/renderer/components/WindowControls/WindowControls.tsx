@@ -6,12 +6,11 @@ const WindowControls = () => {
   const sendControl = (control: WindowControl) =>
     ipcRenderer.send(IpcMessage.WindowControl, control);
 
-  ipcRenderer.send("windowControl");
   return (
-    <div className="mac-buttons no-drag">
+    <div className="window-controls flex justify-between w-[53px] my-[12px] mx-[10px]">
       <div
         onClick={() => sendControl(WindowControl.Close)}
-        className="mac-button mac-close"
+        className="window-control bg-[#fc615d]"
       >
         <svg width="12" height="12" viewBox="0 0 12 12">
           <path
@@ -23,7 +22,7 @@ const WindowControls = () => {
       </div>
       <div
         onClick={() => sendControl(WindowControl.Minimize)}
-        className="mac-button mac-minimize"
+        className="window-control bg-[#fdbc40]"
       >
         <svg width="12" height="12" viewBox="0 0 12 12">
           <rect
@@ -37,17 +36,8 @@ const WindowControls = () => {
         </svg>
       </div>
       <div
-        onClick={
-          () => sendControl(WindowControl.Maximize)
-          //   {
-          //   if (win.isMaximized()) {
-          //     win.unmaximize();
-          //   } else {
-          //     win.maximize();
-          //   }
-          // }
-        }
-        className="mac-button mac-maximize"
+        onClick={() => sendControl(WindowControl.Maximize)}
+        className="window-control bg-[#34c749]"
       >
         <svg width="12" height="12" viewBox="0 0 12 12">
           <g fill="#006500" fillRule="evenodd">
