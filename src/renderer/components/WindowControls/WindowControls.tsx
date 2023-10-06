@@ -1,10 +1,9 @@
-import { ipcRenderer } from "electron";
 import { IpcMessage, WindowControl } from "../../../types";
 import "./WindowControls.css";
 
 const WindowControls = () => {
   const sendControl = (control: WindowControl) =>
-    ipcRenderer.send(IpcMessage.WindowControl, control);
+    window.ipc.send(IpcMessage.WindowControl, control);
 
   return (
     <div className="window-controls flex justify-between w-[53px] my-[12px] mx-[10px]">
