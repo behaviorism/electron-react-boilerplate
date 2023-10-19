@@ -757,14 +757,6 @@
   resolved "https://registry.yarnpkg.com/@types/verror/-/verror-1.10.7.tgz#7e2ee21514355a7ae354fa151d96856d18531f72"
   integrity sha512-4c5F4T0qMSoXq1KHx7WV1FMuD2h0xdaFoJ7HSVWUfQ8w5YbqCwLOA8K7/yy1I+Txuzvm417dnPUaLmqazX1F7g==
 
-"@types/webpack-node-externals@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@types/webpack-node-externals/-/webpack-node-externals-3.0.2.tgz#446e12e867c532c74b9378180a507b58f99a0711"
-  integrity sha512-eJv3PhUj2ntixIBMuNdhhEA5wQJyFn6ing61wABO23Bd2XvtWO8Cn5cpR4+Ey4riT0SXq1dKOGHjQySPhkOqeg==
-  dependencies:
-    "@types/node" "*"
-    webpack "^5"
-
 "@types/ws@^8.5.5":
   version "8.5.6"
   resolved "https://registry.yarnpkg.com/@types/ws/-/ws-8.5.6.tgz#e9ad51f0ab79b9110c50916c9fcbddc36d373065"
